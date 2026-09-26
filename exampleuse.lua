@@ -54,7 +54,7 @@ Converted["_UI"].Parent = game:GetService("CoreGui")
 Converted["_Background"].BackgroundColor3 = Color3.fromRGB(226.0000017285347, 226.0000017285347, 226.0000017285347)
 Converted["_Background"].BorderColor3 = Color3.fromRGB(0, 0, 0)
 Converted["_Background"].BorderSizePixel = 0
-Converted["_Background"].Position = UDim2.new(0.36114496, 0, 0.364438832, 0)
+Converted["_Background"].Position = UDim2.new(0, 593, 0, 288)
 Converted["_Background"].Size = UDim2.new(0, 476, 0, 294)
 Converted["_Background"].Name = "Background"
 Converted["_Background"].Parent = Converted["_UI"]
@@ -166,7 +166,7 @@ Converted["_Unload"].BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 Converted["_Unload"].BackgroundTransparency = 1
 Converted["_Unload"].BorderColor3 = Color3.fromRGB(0, 0, 0)
 Converted["_Unload"].BorderSizePixel = 0
-Converted["_Unload"].Position = UDim2.new(0, 0, 0.148936167, 0)
+Converted["_Unload"].Position = UDim2.new(0, 0, 0, 34)
 Converted["_Unload"].Size = UDim2.new(0, 460, 0, 28)
 Converted["_Unload"].Name = "Unload"
 Converted["_Unload"].Parent = Converted["_Inside"]
@@ -212,7 +212,7 @@ Converted["_scr"].TextSize = 14
 Converted["_scr"].BackgroundColor3 = Color3.fromRGB(249.00000035762787, 249.00000035762787, 249.00000035762787)
 Converted["_scr"].BorderColor3 = Color3.fromRGB(0, 0, 0)
 Converted["_scr"].BorderSizePixel = 0
-Converted["_scr"].Size = UDim2.new(-0.304347813, 200, 1, 0)
+Converted["_scr"].Size = UDim2.new(0, 60, 0, 17)
 Converted["_scr"].Name = "scr"
 Converted["_scr"].Parent = Converted["_Sections"]
 
@@ -232,7 +232,7 @@ Converted["_sett"].TextSize = 14
 Converted["_sett"].BackgroundColor3 = Color3.fromRGB(249.00000035762787, 249.00000035762787, 249.00000035762787)
 Converted["_sett"].BorderColor3 = Color3.fromRGB(0, 0, 0)
 Converted["_sett"].BorderSizePixel = 0
-Converted["_sett"].Size = UDim2.new(-0.304347813, 200, 1, 0)
+Converted["_sett"].Size = UDim2.new(0, 60, 0, 17)
 Converted["_sett"].Name = "sett"
 Converted["_sett"].Parent = Converted["_Sections"]
 
@@ -257,8 +257,8 @@ Converted["_TextLabel3"].BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 Converted["_TextLabel3"].BackgroundTransparency = 1
 Converted["_TextLabel3"].BorderColor3 = Color3.fromRGB(0, 0, 0)
 Converted["_TextLabel3"].BorderSizePixel = 0
-Converted["_TextLabel3"].Position = UDim2.new(0, 0, -0.105263159, 0)
-Converted["_TextLabel3"].Size = UDim2.new(1, 0, 1, 0)
+Converted["_TextLabel3"].Position = UDim2.new(0, 0, 0, -2)
+Converted["_TextLabel3"].Size = UDim2.new(0, 44, 0, 19)
 Converted["_TextLabel3"].Parent = Converted["_Exit"]
 
 Converted["_TextButton"].Font = Enum.Font.SourceSans
@@ -270,7 +270,7 @@ Converted["_TextButton"].BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 Converted["_TextButton"].BackgroundTransparency = 1
 Converted["_TextButton"].BorderColor3 = Color3.fromRGB(0, 0, 0)
 Converted["_TextButton"].BorderSizePixel = 0
-Converted["_TextButton"].Size = UDim2.new(1, 0, 1, 0)
+Converted["_TextButton"].Size = UDim2.new(0, 44, 0, 19)
 Converted["_TextButton"].Parent = Converted["_Exit"]
 
 Converted["_UIShadow"].BlurRadius = UDim.new(0, 20)
@@ -287,7 +287,7 @@ Converted["_ScriptName"].BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 Converted["_ScriptName"].BackgroundTransparency = 1
 Converted["_ScriptName"].BorderColor3 = Color3.fromRGB(0, 0, 0)
 Converted["_ScriptName"].BorderSizePixel = 0
-Converted["_ScriptName"].Position = UDim2.new(0.289915979, 0, 0, -2)
+Converted["_ScriptName"].Position = UDim2.new(0, 138, 0, -2)
 Converted["_ScriptName"].Size = UDim2.new(0, 200, 0, 33)
 Converted["_ScriptName"].Name = "ScriptName"
 Converted["_ScriptName"].Parent = Converted["_Background"]
@@ -307,7 +307,7 @@ local fake_module_scripts = {}
 
 -- Fake Local Scripts:
 
-local function ARYOS_fake_script() -- Fake Script: StarterGui.UI.Background.Inside.Enabler.LocalScript
+local function LYOXW_fake_script() -- Fake Script: StarterGui.UI.Background.Inside.Enabler.LocalScript
     local script = Instance.new("LocalScript")
     script.Name = "LocalScript"
     script.Parent = Converted["_Enabler"]
@@ -332,7 +332,7 @@ local function ARYOS_fake_script() -- Fake Script: StarterGui.UI.Background.Insi
 		end
 	end)
 end
-local function GCZP_fake_script() -- Fake Script: StarterGui.UI.Background.Inside.Keybind.KeybindButton.LocalScript
+local function BMMMYDU_fake_script() -- Fake Script: StarterGui.UI.Background.Inside.Keybind.KeybindButton.LocalScript
     local script = Instance.new("LocalScript")
     script.Name = "LocalScript"
     script.Parent = Converted["_KeybindButton"]
@@ -396,7 +396,7 @@ local function GCZP_fake_script() -- Fake Script: StarterGui.UI.Background.Insid
 		end
 	end)
 end
-local function ZRENEO_fake_script() -- Fake Script: StarterGui.UI.Background.Inside.Unload.LocalScript
+local function FVLASKU_fake_script() -- Fake Script: StarterGui.UI.Background.Inside.Unload.LocalScript
     local script = Instance.new("LocalScript")
     script.Name = "LocalScript"
     script.Parent = Converted["_Unload"]
@@ -434,7 +434,7 @@ local function ZRENEO_fake_script() -- Fake Script: StarterGui.UI.Background.Ins
 		end
 	end)
 end
-local function UOBFDGH_fake_script() -- Fake Script: StarterGui.UI.Background.Sections.scr.LocalScript
+local function TBHRNGR_fake_script() -- Fake Script: StarterGui.UI.Background.Sections.scr.LocalScript
     local script = Instance.new("LocalScript")
     script.Name = "LocalScript"
     script.Parent = Converted["_scr"]
@@ -457,7 +457,7 @@ local function UOBFDGH_fake_script() -- Fake Script: StarterGui.UI.Background.Se
 		unl.Visible = false	
 	end)
 end
-local function NYYFS_fake_script() -- Fake Script: StarterGui.UI.Background.Sections.sett.LocalScript
+local function MVBA_fake_script() -- Fake Script: StarterGui.UI.Background.Sections.sett.LocalScript
     local script = Instance.new("LocalScript")
     script.Name = "LocalScript"
     script.Parent = Converted["_sett"]
@@ -481,7 +481,7 @@ local function NYYFS_fake_script() -- Fake Script: StarterGui.UI.Background.Sect
 		scr.Visible = false
 	end)
 end
-local function KEXSM_fake_script() -- Fake Script: StarterGui.UI.Background.Exit.TextButton.LocalScript
+local function ZBXSWB_fake_script() -- Fake Script: StarterGui.UI.Background.Exit.TextButton.LocalScript
     local script = Instance.new("LocalScript")
     script.Name = "LocalScript"
     script.Parent = Converted["_TextButton"]
@@ -498,7 +498,7 @@ local function KEXSM_fake_script() -- Fake Script: StarterGui.UI.Background.Exit
 		script.Parent.Parent.Parent.Parent:Destroy()
 	end)
 end
-local function NFHT_fake_script() -- Fake Script: StarterGui.UI.Background.Hitbox.UIDragScript
+local function UKEOD_fake_script() -- Fake Script: StarterGui.UI.Background.Hitbox.UIDragScript
     local script = Instance.new("LocalScript")
     script.Name = "UIDragScript"
     script.Parent = Converted["_Hitbox"]
@@ -549,10 +549,10 @@ local function NFHT_fake_script() -- Fake Script: StarterGui.UI.Background.Hitbo
 	end)
 end
 
-coroutine.wrap(ARYOS_fake_script)()
-coroutine.wrap(GCZP_fake_script)()
-coroutine.wrap(ZRENEO_fake_script)()
-coroutine.wrap(UOBFDGH_fake_script)()
-coroutine.wrap(NYYFS_fake_script)()
-coroutine.wrap(KEXSM_fake_script)()
-coroutine.wrap(NFHT_fake_script)()
+coroutine.wrap(LYOXW_fake_script)()
+coroutine.wrap(BMMMYDU_fake_script)()
+coroutine.wrap(FVLASKU_fake_script)()
+coroutine.wrap(TBHRNGR_fake_script)()
+coroutine.wrap(MVBA_fake_script)()
+coroutine.wrap(ZBXSWB_fake_script)()
+coroutine.wrap(UKEOD_fake_script)()
