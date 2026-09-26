@@ -1,0 +1,60 @@
+local plr = game.Players.LocalPlayer
+local howmany = 770
+local ts = game:GetService("TweenService")
+local ti = TweenInfo.new(1, Enum.EasingStyle.Cubic, Enum.EasingDirection.InOut)
+local Event = workspace.ClaimRiverResultsGold
+getgenv().Start = false
+local function debug(text)
+    print("[BABFT SCRIPT DEBUG] > ".. text)
+end
+local stages = {
+    CFrame.new(-179, 22, 1365),
+    CFrame.new(-179, 22, 1365 + (howmany * 1)),
+    CFrame.new(-179, 22, 1365 + (howmany * 2)),
+    CFrame.new(-179, 22, 1365 + (howmany * 3)),
+    CFrame.new(-179, 22, 1365 + (howmany * 4)),
+    CFrame.new(-179, 22, 1365 + (howmany * 5)),
+    CFrame.new(-179, 22, 1365 + (howmany * 6)),
+    CFrame.new(-179, 22, 1365 + (howmany * 7)),
+    CFrame.new(-179, 22, 1365 + (howmany * 8)),
+    CFrame.new(-179, 22, 1365 + (howmany * 8.985)),
+}
+for i,v in pairs(game.Workspace:GetDescendants()) do
+    if v:isA("Part") then
+        if v.Name == "Floatpad" then
+            v:Destroy()
+        end
+    end
+end
+local gchest = CFrame.new(-56, -348, 9496)
+local starttweening = CFrame.new(-55, 23, 8703)
+local float = Instance.new("Part", game.Workspace)
+while getgenv().Start == true do
+        task.wait()
+        local char = plr.Character or plr.CharacterAdded:Wait()
+        local hum = char:WaitForChild("HumanoidRootPart")
+        local starttween = ts:Create(hum, ti, {CFrame = gchest})
+        float.Size = Vector3.new(5, 1, 5)
+        local anywhere = Vector3.new(2048,2048,2048)
+        float.Position = anywhere  
+        float.Anchored = true
+        float.Name = "Floatpad"
+    for _, stagescframe in pairs(stages) do
+        if getgenv().Start == true then
+            hum.CFrame = stagescframe
+            local gotopos = hum.Position - Vector3.new(0, 3.5, 0)
+            float.Position = gotopos
+                if stagescframe == CFrame.new(-179, 22, 1365 + (howmany * 8.985)) then
+                    task.wait(2)
+                    hum.CFrame = starttweening
+                    starttween:Play()
+                    task.wait(14.75)
+                    Event:FireServer() 
+                end
+            task.wait(2)
+            elseif getgenv().Start == false then
+            debug("Disabled")
+            break
+        end
+    end 
+end
