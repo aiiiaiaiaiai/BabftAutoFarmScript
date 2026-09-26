@@ -3,7 +3,6 @@ local howmany = 770
 local ts = game:GetService("TweenService")
 local ti = TweenInfo.new(1, Enum.EasingStyle.Cubic, Enum.EasingDirection.InOut)
 local Event = workspace.ClaimRiverResultsGold
-getgenv().Start = false
 local function debug(text)
     print("[BABFT SCRIPT DEBUG] > ".. text)
 end
