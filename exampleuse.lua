@@ -3,43 +3,43 @@
 -- Instances:
 
 local Converted = {
-	["_UI"] = Instance.new("ScreenGui");
-	["_Background"] = Instance.new("Frame");
-	["_Inside"] = Instance.new("Frame");
-	["_UIStroke"] = Instance.new("UIStroke");
-	["_Enabler"] = Instance.new("TextButton");
-	["_Frame"] = Instance.new("Frame");
-	["_UIStroke1"] = Instance.new("UIStroke");
-	["_TextLabel"] = Instance.new("TextLabel");
-	["_LocalScript"] = Instance.new("LocalScript");
-	["_Keybind"] = Instance.new("Frame");
-	["_UIStroke2"] = Instance.new("UIStroke");
-	["_TextLabel1"] = Instance.new("TextLabel");
-	["_KeybindButton"] = Instance.new("TextButton");
-	["_Current Keybind"] = Instance.new("TextLabel");
-	["_LocalScript1"] = Instance.new("LocalScript");
-	["_Unload"] = Instance.new("TextButton");
-	["_Frame1"] = Instance.new("Frame");
-	["_UIStroke3"] = Instance.new("UIStroke");
-	["_TextLabel2"] = Instance.new("TextLabel");
-	["_LocalScript2"] = Instance.new("LocalScript");
-	["_Sections"] = Instance.new("Frame");
-	["_UIStroke4"] = Instance.new("UIStroke");
-	["_scr"] = Instance.new("TextButton");
-	["_UIStroke5"] = Instance.new("UIStroke");
-	["_LocalScript3"] = Instance.new("LocalScript");
-	["_UIListLayout"] = Instance.new("UIListLayout");
-	["_sett"] = Instance.new("TextButton");
-	["_UIStroke6"] = Instance.new("UIStroke");
-	["_LocalScript4"] = Instance.new("LocalScript");
-	["_Exit"] = Instance.new("Frame");
-	["_TextLabel3"] = Instance.new("TextLabel");
-	["_TextButton"] = Instance.new("TextButton");
-	["_LocalScript5"] = Instance.new("LocalScript");
-	["_UIShadow"] = Instance.new("UIShadow");
-	["_ScriptName"] = Instance.new("TextLabel");
-	["_Hitbox"] = Instance.new("Frame");
-	["_UIDragScript"] = Instance.new("LocalScript");
+    ["_UI"] = Instance.new("ScreenGui");
+    ["_Background"] = Instance.new("Frame");
+    ["_Inside"] = Instance.new("Frame");
+    ["_UIStroke"] = Instance.new("UIStroke");
+    ["_Enabler"] = Instance.new("TextButton");
+    ["_Frame"] = Instance.new("Frame");
+    ["_UIStroke1"] = Instance.new("UIStroke");
+    ["_TextLabel"] = Instance.new("TextLabel");
+    ["_LocalScript"] = Instance.new("LocalScript");
+    ["_Keybind"] = Instance.new("Frame");
+    ["_UIStroke2"] = Instance.new("UIStroke");
+    ["_TextLabel1"] = Instance.new("TextLabel");
+    ["_KeybindButton"] = Instance.new("TextButton");
+    ["_Current Keybind"] = Instance.new("TextLabel");
+    ["_LocalScript1"] = Instance.new("LocalScript");
+    ["_Unload"] = Instance.new("TextButton");
+    ["_Frame1"] = Instance.new("Frame");
+    ["_UIStroke3"] = Instance.new("UIStroke");
+    ["_TextLabel2"] = Instance.new("TextLabel");
+    ["_LocalScript2"] = Instance.new("LocalScript");
+    ["_Sections"] = Instance.new("Frame");
+    ["_UIStroke4"] = Instance.new("UIStroke");
+    ["_scr"] = Instance.new("TextButton");
+    ["_UIStroke5"] = Instance.new("UIStroke");
+    ["_LocalScript3"] = Instance.new("LocalScript");
+    ["_UIListLayout"] = Instance.new("UIListLayout");
+    ["_sett"] = Instance.new("TextButton");
+    ["_UIStroke6"] = Instance.new("UIStroke");
+    ["_LocalScript4"] = Instance.new("LocalScript");
+    ["_Exit"] = Instance.new("Frame");
+    ["_TextLabel3"] = Instance.new("TextLabel");
+    ["_TextButton"] = Instance.new("TextButton");
+    ["_LocalScript5"] = Instance.new("LocalScript");
+    ["_UIShadow"] = Instance.new("UIShadow");
+    ["_ScriptName"] = Instance.new("TextLabel");
+    ["_Hitbox"] = Instance.new("Frame");
+    ["_UIDragScript"] = Instance.new("LocalScript");
 }
 
 -- Properties:
@@ -304,10 +304,9 @@ Converted["_Hitbox"].Parent = Converted["_Background"]
 
 local fake_module_scripts = {}
 
-
 -- Fake Local Scripts:
 
-local function LYOXW_fake_script() -- Fake Script: StarterGui.UI.Background.Inside.Enabler.LocalScript
+local function OJKKJVW_fake_script() -- Fake Script: StarterGui.UI.Background.Inside.Enabler.LocalScript
     local script = Instance.new("LocalScript")
     script.Name = "LocalScript"
     script.Parent = Converted["_Enabler"]
@@ -320,19 +319,21 @@ local function LYOXW_fake_script() -- Fake Script: StarterGui.UI.Background.Insi
         return req(obj)
     end
 
-	local autofarmtext = ' Auto Farm'
-	script.Parent.Frame.TextLabel.Text = "Enable".. autofarmtext
-	script.Parent.MouseButton1Click:Connect(function()
-		if getgenv().Start == true then
-			script.Parent.Frame.TextLabel.Text = "Enable".. autofarmtext
-			getgenv().Start = false else
-			script.Parent.Frame.TextLabel.Text = "Disable".. autofarmtext
-			getgenv().Start = true
-			loadstring(game:HttpGet("https://raw.githubusercontent.com/aiiiaiaiaiai/BabftAutoFarmScript/refs/heads/main/babft.lua"))
-		end
-	end)
+    local autofarmtext = ' Auto Farm'
+    script.Parent.Frame.TextLabel.Text = "Enable".. autofarmtext
+    script.Parent.MouseButton1Click:Connect(function()
+        if getgenv().Start == true then
+            script.Parent.Frame.TextLabel.Text = "Enable".. autofarmtext
+            getgenv().Start = false 
+        else
+            script.Parent.Frame.TextLabel.Text = "Disable".. autofarmtext
+            getgenv().Start = true
+            loadstring(game:HttpGet("https://raw.githubusercontent.com/aiiiaiaiaiai/BabftAutoFarmScript/refs/heads/main/babft.lua"))()
+        end
+    end)
 end
-local function BMMMYDU_fake_script() -- Fake Script: StarterGui.UI.Background.Inside.Keybind.KeybindButton.LocalScript
+
+local function XJJTWQ_fake_script() -- Fake Script: StarterGui.UI.Background.Inside.Keybind.KeybindButton.LocalScript
     local script = Instance.new("LocalScript")
     script.Name = "LocalScript"
     script.Parent = Converted["_KeybindButton"]
@@ -345,58 +346,67 @@ local function BMMMYDU_fake_script() -- Fake Script: StarterGui.UI.Background.In
         return req(obj)
     end
 
-	local UserInputService = game:GetService("UserInputService")
-	local curkeybind = script.Parent["Current Keybind"]
-	local aC = nil
-	local fN = "BabftKeyBIND.txt"
-	if isfile(fN) then
-		local savedkN = readfile(fN)
-		savedkN = string.gsub(savedkN, "%s+", "")
-		if Enum.KeyCode[savedkN] then
-			curkeybind.Text = savedkN
-			getgenv().SelectedKey = Enum.KeyCode[savedkN]
-		else
-			writefile(fN, "K")
-			curkeybind.Text = "K"
-			getgenv().SelectedKey = Enum.KeyCode.K
-		end
-	else
-		writefile(fN, "K")
-		curkeybind.Text = "K"
-		getgenv().SelectedKey = Enum.KeyCode.K
-	end
-	script.Parent.MouseButton1Click:Connect(function()
-		if aC then
-			aC:Disconnect()
-			aC = nil
-		end
-		curkeybind.Text = "Press any key..."
-		aC = UserInputService.InputBegan:Connect(function(i, gP)
-			if not gP and i.UserInputType == Enum.UserInputType.Keyboard then
-				local kN = i.KeyCode.Name
-				curkeybind.Text = kN
-				getgenv().SelectedKey = i.KeyCode
-				writefile(fN, kN)
-				if aC then
-					aC:Disconnect()
-					aC = nil
-				end
-			end
-		end)
-	end)
-	UserInputService.InputBegan:Connect(function(i)
-		local savedkB = script.Parent["Current Keybind"]
-		if i.KeyCode == Enum.KeyCode[savedkB.Text] then
-			local bg = script.Parent.Parent.Parent.Parent
-			if bg.Visible == true then
-				bg.Visible = false 
-			elseif bg.Visible == false then
-				bg.Visible = true
-			end
-		end
-	end)
+    local UserInputService = game:GetService("UserInputService")
+    local button = script.Parent
+    local curkeybind = button:WaitForChild("Current Keybind")
+    local aC = nil
+    local fN = "BabftKeyBIND.txt"
+    
+    if isfile(fN) then
+        local savedkN = readfile(fN)
+        savedkN = string.gsub(savedkN, "%s+", "")
+        if Enum.KeyCode[savedkN] then
+            curkeybind.Text = savedkN
+            getgenv().SelectedKey = Enum.KeyCode[savedkN]
+        else
+            writefile(fN, "K")
+            curkeybind.Text = "K"
+            getgenv().SelectedKey = Enum.KeyCode.K
+        end
+    else
+        writefile(fN, "K")
+        curkeybind.Text = "K"
+        getgenv().SelectedKey = Enum.KeyCode.K
+    end
+
+    button.MouseButton1Click:Connect(function()
+        if aC then
+            aC:Disconnect()
+            aC = nil
+        end
+        curkeybind.Text = "Press any key..."
+        aC = UserInputService.InputBegan:Connect(function(i, gP)
+            if not gP and i.UserInputType == Enum.UserInputType.Keyboard then
+                local kN = i.KeyCode.Name
+                curkeybind.Text = kN
+                getgenv().SelectedKey = i.KeyCode
+                writefile(fN, kN)
+                if aC then
+                    aC:Disconnect()
+                    aC = nil
+                end
+            end
+        end)
+    end)
+
+    UserInputService.InputBegan:Connect(function(i, gP)
+        if not gP and i.UserInputType == Enum.UserInputType.Keyboard then
+            if isfile(fN) then
+                local savedkB = readfile(fN)
+                savedkB = string.gsub(savedkB, "%s+", "")
+                local success, keyCode = pcall(function()
+                    return Enum.KeyCode[savedkB]
+                end)
+                if success and keyCode and i.KeyCode == keyCode then
+                    local bg = button.Parent.Parent.Parent
+                    bg.Visible = not bg.Visible
+                end
+            end
+        end
+    end)
 end
-local function FVLASKU_fake_script() -- Fake Script: StarterGui.UI.Background.Inside.Unload.LocalScript
+
+local function JOOQH_fake_script() -- Fake Script: StarterGui.UI.Background.Inside.Unload.LocalScript
     local script = Instance.new("LocalScript")
     script.Name = "LocalScript"
     script.Parent = Converted["_Unload"]
@@ -409,32 +419,33 @@ local function FVLASKU_fake_script() -- Fake Script: StarterGui.UI.Background.In
         return req(obj)
     end
 
-	local isConfirming = false
-	local textLabel = script.Parent.Frame.TextLabel
-	script.Parent.MouseButton1Click:Connect(function()
-		if textLabel.Text == "Unload" or textLabel.Text == "Confirm Unload?" then
-			if not isConfirming then
-				isConfirming = true
-				textLabel.Text = "Confirm Unload?"
-				task.delay(3, function()
-					if isConfirming and textLabel.Text == "Confirm Unload?" then
-						isConfirming = false
-						textLabel.Text = "Unload"
-					end
-				end)
-			else
-				getgenv().Start = false
-				local mainGui = script.Parent:FindFirstAncestor("WIN8")
-				if mainGui then
-					mainGui:Destroy()
-				else
-					script.Parent.Parent.Parent.Parent.Parent:Destroy()
-				end
-			end
-		end
-	end)
+    local isConfirming = false
+    local textLabel = script.Parent.Frame.TextLabel
+    script.Parent.MouseButton1Click:Connect(function()
+        if textLabel.Text == "Unload" or textLabel.Text == "Confirm Unload?" then
+            if not isConfirming then
+                isConfirming = true
+                textLabel.Text = "Confirm Unload?"
+                task.delay(3, function()
+                    if isConfirming and textLabel.Text == "Confirm Unload?" then
+                        isConfirming = false
+                        textLabel.Text = "Unload"
+                    end
+                end)
+            else
+                getgenv().Start = false
+                local mainGui = script.Parent:FindFirstAncestor("UI")
+                if mainGui then
+                    mainGui:Destroy()
+                else
+                    script.Parent.Parent.Parent.Parent.Parent:Destroy()
+                end
+            end
+        end
+    end)
 end
-local function TBHRNGR_fake_script() -- Fake Script: StarterGui.UI.Background.Sections.scr.LocalScript
+
+local function GKNHMDS_fake_script() -- Fake Script: StarterGui.UI.Background.Sections.scr.LocalScript
     local script = Instance.new("LocalScript")
     script.Name = "LocalScript"
     script.Parent = Converted["_scr"]
@@ -447,17 +458,18 @@ local function TBHRNGR_fake_script() -- Fake Script: StarterGui.UI.Background.Se
         return req(obj)
     end
 
-	local kb = script.Parent.Parent.Parent.Inside.Keybind
-	local unl = script.Parent.Parent.Parent.Inside.Unload
-	local scr = script.Parent.Parent.Parent.Inside.Enabler
-	scr.Visible = true
-	script.Parent.MouseButton1Click:Connect(function()
-		scr.Visible = true
-		kb.Visible = false
-		unl.Visible = false	
-	end)
+    local kb = script.Parent.Parent.Parent.Inside.Keybind
+    local unl = script.Parent.Parent.Parent.Inside.Unload
+    local scr = script.Parent.Parent.Parent.Inside.Enabler
+    scr.Visible = true
+    script.Parent.MouseButton1Click:Connect(function()
+        scr.Visible = true
+        kb.Visible = false
+        unl.Visible = false 
+    end)
 end
-local function MVBA_fake_script() -- Fake Script: StarterGui.UI.Background.Sections.sett.LocalScript
+
+local function DQZE_fake_script() -- Fake Script: StarterGui.UI.Background.Sections.sett.LocalScript
     local script = Instance.new("LocalScript")
     script.Name = "LocalScript"
     script.Parent = Converted["_sett"]
@@ -470,18 +482,19 @@ local function MVBA_fake_script() -- Fake Script: StarterGui.UI.Background.Secti
         return req(obj)
     end
 
-	local kb = script.Parent.Parent.Parent.Inside.Keybind
-	local unl = script.Parent.Parent.Parent.Inside.Unload
-	local scr = script.Parent.Parent.Parent.Inside.Enabler
-	unl.Visible = false
-	kb.Visible = false
-	script.Parent.MouseButton1Click:Connect(function()
-		kb.Visible = true
-		unl.Visible = true
-		scr.Visible = false
-	end)
+    local kb = script.Parent.Parent.Parent.Inside.Keybind
+    local unl = script.Parent.Parent.Parent.Inside.Unload
+    local scr = script.Parent.Parent.Parent.Inside.Enabler
+    unl.Visible = false
+    kb.Visible = false
+    script.Parent.MouseButton1Click:Connect(function()
+        kb.Visible = true
+        unl.Visible = true
+        scr.Visible = false
+    end)
 end
-local function ZBXSWB_fake_script() -- Fake Script: StarterGui.UI.Background.Exit.TextButton.LocalScript
+
+local function JKFSGLF_fake_script() -- Fake Script: StarterGui.UI.Background.Exit.TextButton.LocalScript
     local script = Instance.new("LocalScript")
     script.Name = "LocalScript"
     script.Parent = Converted["_TextButton"]
@@ -494,11 +507,12 @@ local function ZBXSWB_fake_script() -- Fake Script: StarterGui.UI.Background.Exi
         return req(obj)
     end
 
-	script.Parent.MouseButton1Click:Connect(function()
-		script.Parent.Parent.Parent.Parent:Destroy()
-	end)
+    script.Parent.MouseButton1Click:Connect(function()
+        script.Parent.Parent.Parent.Parent:Destroy()
+    end)
 end
-local function UKEOD_fake_script() -- Fake Script: StarterGui.UI.Background.Hitbox.UIDragScript
+
+local function HYQN_fake_script() -- Fake Script: StarterGui.UI.Background.Hitbox.UIDragScript
     local script = Instance.new("LocalScript")
     script.Name = "UIDragScript"
     script.Parent = Converted["_Hitbox"]
@@ -511,48 +525,48 @@ local function UKEOD_fake_script() -- Fake Script: StarterGui.UI.Background.Hitb
         return req(obj)
     end
 
-	local UserInputService = game:GetService("UserInputService")
-	local gui = script.Parent.Parent
-	
-	local dragging = false
-	local dragStart, startPos
-	local endedConnection
-	
-	gui.InputBegan:Connect(function(input)
-		if input.UserInputType == Enum.UserInputType.MouseButton1 or input.UserInputType == Enum.UserInputType.Touch then
-			dragging = true
-			dragStart = input.Position
-			startPos = gui.Position
-			if endedConnection then
-				endedConnection:Disconnect()
-			end
-			endedConnection = UserInputService.InputEnded:Connect(function(endInput)
-				if endInput.UserInputType == Enum.UserInputType.MouseButton1 or endInput.UserInputType == Enum.UserInputType.Touch then
-					dragging = false
-					if endedConnection then
-						endedConnection:Disconnect()
-						endedConnection = nil
-					end
-				end
-			end)
-		end
-	end)
-	
-	UserInputService.InputChanged:Connect(function(input)
-		if dragging and (input.UserInputType == Enum.UserInputType.MouseMovement or input.UserInputType == Enum.UserInputType.Touch) then
-			local delta = input.Position - dragStart
-			gui.Position = UDim2.new(
-				startPos.X.Scale, startPos.X.Offset + delta.X, 
-				startPos.Y.Scale, startPos.Y.Offset + delta.Y
-			)
-		end
-	end)
+    local UserInputService = game:GetService("UserInputService")
+    local gui = script.Parent.Parent
+    
+    local dragging = false
+    local dragStart, startPos
+    local endedConnection
+    
+    gui.InputBegan:Connect(function(input)
+        if input.UserInputType == Enum.UserInputType.MouseButton1 or input.UserInputType == Enum.UserInputType.Touch then
+            dragging = true
+            dragStart = input.Position
+            startPos = gui.Position
+            if endedConnection then
+                endedConnection:Disconnect()
+            end
+            endedConnection = UserInputService.InputEnded:Connect(function(endInput)
+                if endInput.UserInputType == Enum.UserInputType.MouseButton1 or endInput.UserInputType == Enum.UserInputType.Touch then
+                    dragging = false
+                    if endedConnection then
+                        endedConnection:Disconnect()
+                        endedConnection = nil
+                    end
+                end
+            end)
+        end
+    end)
+    
+    UserInputService.InputChanged:Connect(function(input)
+        if dragging and (input.UserInputType == Enum.UserInputType.MouseMovement or input.UserInputType == Enum.UserInputType.Touch) then
+            local delta = input.Position - dragStart
+            gui.Position = UDim2.new(
+                startPos.X.Scale, startPos.X.Offset + delta.X, 
+                startPos.Y.Scale, startPos.Y.Offset + delta.Y
+            )
+        end
+    end)
 end
 
-coroutine.wrap(LYOXW_fake_script)()
-coroutine.wrap(BMMMYDU_fake_script)()
-coroutine.wrap(FVLASKU_fake_script)()
-coroutine.wrap(TBHRNGR_fake_script)()
-coroutine.wrap(MVBA_fake_script)()
-coroutine.wrap(ZBXSWB_fake_script)()
-coroutine.wrap(UKEOD_fake_script)()
+coroutine.wrap(OJKKJVW_fake_script)()
+coroutine.wrap(XJJTWQ_fake_script)()
+coroutine.wrap(JOOQH_fake_script)()
+coroutine.wrap(GKNHMDS_fake_script)()
+coroutine.wrap(DQZE_fake_script)()
+coroutine.wrap(JKFSGLF_fake_script)()
+coroutine.wrap(HYQN_fake_script)()
