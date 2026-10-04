@@ -38,12 +38,12 @@ while getgenv().Start == true do
         float.Position = anywhere  
         float.Anchored = true
         float.Name = "Floatpad"
-    for _, stagescframe in pairs(stages) do
+    for i, stagescframe in pairs(stages) do
         if getgenv().Start == true then
             hum.CFrame = stagescframe
             local gotopos = hum.Position - Vector3.new(0, 3.5, 0)
             float.Position = gotopos
-                if stagescframe == CFrame.new(-179, 22, 1365 + (howmany * 8.985)) then
+                if i == #stages then
                     task.wait(2)
                     hum.CFrame = starttweening
                     starttween:Play()
