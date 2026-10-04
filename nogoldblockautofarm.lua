@@ -45,8 +45,10 @@ while getgenv().Start == true do
                 if i == #stages then
                     task.wait(2)
                     char:BreakJoints()
-                    task.wait(3)
-                    Event:FireServer() 
+                    plr.CharacterAdded:Connect(function()
+                        wait(0.5)
+                        Event:FireServer() 
+                    end)
                 end
             task.wait(2)
             elseif getgenv().Start == false then
