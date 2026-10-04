@@ -37,18 +37,14 @@ while getgenv().Start == true do
         float.Name = "Floatpad"
     for i, stagescframe in pairs(stages) do
         if getgenv().Start == true then
-            hum.Anchored = false
             hum.CFrame = stagescframe
-            hum.Anchored = true
             local gotopos = hum.Position - Vector3.new(0, 3.5, 0)
             float.Position = gotopos
                 if i == #stages then
                     task.wait(2)
                     char:BreakJoints()
-                    plr.CharacterAdded:Connect(function()
-                        wait(0.5)
-                        Event:FireServer() 
-                    end)
+                    task.wait(4)
+                    Event:FireServer() 
                 end
             task.wait(2)
             elseif getgenv().Start == false then
