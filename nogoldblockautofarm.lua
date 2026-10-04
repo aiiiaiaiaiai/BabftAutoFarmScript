@@ -48,7 +48,6 @@ while getgenv().Start == true do
                 end
             task.wait(2)
             elseif getgenv().Start == false then
-            hum.Anchored = false
             debug("Disabled")
             break
         end
