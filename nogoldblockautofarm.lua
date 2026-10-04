@@ -26,7 +26,7 @@ for i,v in pairs(game.Workspace:GetDescendants()) do
     end
 end
 local float = Instance.new("Part", game.Workspace)
-while getgenv().Start == true do
+while getgenv().StartWithout == true do
         task.wait()
         local char = plr.Character or plr.CharacterAdded:Wait()
         local hum = char:WaitForChild("HumanoidRootPart")
@@ -36,7 +36,7 @@ while getgenv().Start == true do
         float.Anchored = true
         float.Name = "Floatpad"
     for i, stagescframe in pairs(stages) do
-        if getgenv().Start == true then
+        if getgenv().StartWithout == true then
             hum.CFrame = stagescframe
             local gotopos = hum.Position - Vector3.new(0, 3.5, 0)
             float.Position = gotopos
@@ -47,7 +47,7 @@ while getgenv().Start == true do
                     Event:FireServer() 
                 end
             task.wait(2)
-            elseif getgenv().Start == false then
+            elseif getgenv().StartWithout == false then
             debug("Disabled")
             break
         end
